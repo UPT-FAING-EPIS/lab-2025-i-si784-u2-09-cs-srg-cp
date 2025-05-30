@@ -78,6 +78,11 @@ jobs:
                 "files": [
                   "images/**"
                 ]
+              },
+              {
+                "files": [
+                  "Cobertura/**"
+                ]
               }
             ],
             "output": "_site",
