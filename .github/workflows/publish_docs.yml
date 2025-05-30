@@ -69,7 +69,8 @@ jobs:
                 ],
                 "exclude": [
                   "_site/**",
-                  "Cobertura/index.html"
+                  "Cobertura/index.html",
+                  "ReporteBDD/index.html"
                 ]
               }
             ],
@@ -116,6 +117,8 @@ jobs:
         ## [Diagrama de Clases](clases.md)
 
         ## [Pruebas Markdown](Cobertura/SummaryGithub.md)
+
+        ## [Reporte BDD](ReporteBDD/index.html)
         EOF
     - name: Generar documentación
       run: |
