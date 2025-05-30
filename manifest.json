@@ -1,0 +1,173 @@
+{
+  "source_base_path": "/home/runner/work/lab-2025-i-si784-u2-09-cs-srg-cp/lab-2025-i-si784-u2-09-cs-srg-cp/Bank",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Cobertura/SummaryGithub.md",
+      "output": {
+        ".html": {
+          "relative_path": "Cobertura/SummaryGithub.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "clases.md",
+      "output": {
+        ".html": {
+          "relative_path": "clases.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Bank.Domain.Cliente.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Bank.Domain.Cliente.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Cliente",
+      "Summary": "<p sourcefile=\"docs/Bank.Domain.Cliente.yml\" sourcestartlinenumber=\"1\">Representa un cliente del banco.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Bank.Domain.CuentaAhorro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Bank.Domain.CuentaAhorro.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.CuentaAhorro",
+      "Summary": "<p sourcefile=\"docs/Bank.Domain.CuentaAhorro.yml\" sourcestartlinenumber=\"1\">Representa una cuenta de ahorro bancaria con operaciones básicas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Bank.Domain.Tests.Features.CuentaAhorroPruebas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Bank.Domain.Tests.Features.CuentaAhorroPruebas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Features.CuentaAhorroPruebas",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Bank.Domain.Tests.Features.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Bank.Domain.Tests.Features.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Features",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Bank.Domain.Tests.Steps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Bank.Domain.Tests.Steps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain.Tests.Steps",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/Bank.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Bank.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Bank.Domain",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

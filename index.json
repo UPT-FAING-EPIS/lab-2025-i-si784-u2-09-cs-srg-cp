@@ -1,0 +1,52 @@
+{
+  "Cobertura/SummaryGithub.html": {
+    "href": "Cobertura/SummaryGithub.html",
+    "title": "Summary | Bank App",
+    "summary": "Summary Summary Generated on: 05/30/2025 - 02:08:21 Coverage date: 05/30/2025 - 02:08:19 Parser: Cobertura Assemblies: 1 Classes: 2 Files: 2 Line coverage: 95.2% (40 of 42) Covered lines: 40 Uncovered lines: 2 Coverable lines: 42 Total lines: 144 Branch coverage: 83.3% (5 of 6) Covered branches: 5 Total branches: 6 Method coverage: Feature is only available for sponsors Coverage Bank.Domain - 95.2% Name Line Branch Bank.Domain 95.2% 83.3% Bank.Domain.Cliente 100% Bank.Domain.CuentaAhorro 94.2% 83.3%"
+  },
+  "clases.html": {
+    "href": "clases.html",
+    "title": "| Bank App",
+    "summary": "classDiagram class Cliente Cliente : +Int IdCliente Cliente : +String NombreCliente Cliente : +Registrar() Cliente class CuentaAhorro CuentaAhorro : +Int IdCuenta CuentaAhorro : +String NumeroCuenta CuentaAhorro : +Cliente Propietario CuentaAhorro : +Int IdPropietario CuentaAhorro : +Decimal Tasa CuentaAhorro : +Decimal Saldo CuentaAhorro : +DateTime FechaApertura CuentaAhorro : +Boolean Estado CuentaAhorro : +Aperturar() CuentaAhorro CuentaAhorro : +Depositar() Void CuentaAhorro : +Retirar() Void CuentaAhorro : +Cancelar() Void Cliente <-- CuentaAhorro"
+  },
+  "docs/Bank.Domain.Cliente.html": {
+    "href": "docs/Bank.Domain.Cliente.html",
+    "title": "Class Cliente | Bank App",
+    "summary": "Class Cliente Namespace Bank.Domain Assembly Bank.Domain.dll Representa un cliente del banco. public class Cliente Inheritance object Cliente Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties IdCliente Identificador único del cliente. public int IdCliente { get; } Property Value int NombreCliente Nombre completo del cliente. public string NombreCliente { get; } Property Value string Methods Registrar(string) Registra un nuevo cliente en el sistema. public static Cliente Registrar(string _nombre) Parameters _nombre string Nombre del cliente a registrar. Returns Cliente Una nueva instancia de Cliente."
+  },
+  "docs/Bank.Domain.CuentaAhorro.html": {
+    "href": "docs/Bank.Domain.CuentaAhorro.html",
+    "title": "Class CuentaAhorro | Bank App",
+    "summary": "Class CuentaAhorro Namespace Bank.Domain Assembly Bank.Domain.dll Representa una cuenta de ahorro bancaria con operaciones básicas. public class CuentaAhorro Inheritance object CuentaAhorro Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields ERROR_CANCELAR_CUENTA_CON_SALDO Mensaje de error cuando se intenta cancelar una cuenta con saldo. public const string ERROR_CANCELAR_CUENTA_CON_SALDO = \"No se puede cancelar una cuenta con saldo\" Field Value string ERROR_MONTO_MENOR_IGUAL_A_CERO Mensaje de error cuando se intenta realizar una operación con un monto menor o igual a cero. public const string ERROR_MONTO_MENOR_IGUAL_A_CERO = \"El monto no puede ser menor o igual a 0\" Field Value string Properties Estado Estado de la cuenta (true = activa, false = cancelada). public bool Estado { get; } Property Value bool FechaApertura Fecha en que se aperturó la cuenta. public DateTime FechaApertura { get; } Property Value DateTime IdCuenta Identificador único de la cuenta. public int IdCuenta { get; } Property Value int IdPropietario Identificador del propietario de la cuenta. public int IdPropietario { get; } Property Value int NumeroCuenta Número de cuenta asignado. public string NumeroCuenta { get; } Property Value string Propietario Cliente propietario de la cuenta. public virtual Cliente Propietario { get; } Property Value Cliente Saldo Saldo actual de la cuenta. public decimal Saldo { get; } Property Value decimal Tasa Tasa de interés aplicada a la cuenta. public decimal Tasa { get; } Property Value decimal Methods Aperturar(string, Cliente, decimal) Crea una nueva instancia de cuenta de ahorro. public static CuentaAhorro Aperturar(string _numeroCuenta, Cliente _propietario, decimal _tasa) Parameters _numeroCuenta string Número de cuenta a asignar. _propietario Cliente Cliente propietario de la cuenta. _tasa decimal Tasa de interés a aplicar. Returns CuentaAhorro Una nueva instancia de CuentaAhorro. Cancelar() Cancela la cuenta de ahorro. public void Cancelar() Exceptions Exception Se lanza cuando se intenta cancelar una cuenta con saldo. Depositar(decimal) Realiza un depósito en la cuenta. public void Depositar(decimal monto) Parameters monto decimal Monto a depositar. Exceptions Exception Se lanza cuando el monto es menor o igual a cero. Retirar(decimal) Realiza un retiro de la cuenta. public void Retirar(decimal monto) Parameters monto decimal Monto a retirar. Exceptions Exception Se lanza cuando el monto es menor o igual a cero."
+  },
+  "docs/Bank.Domain.Tests.Features.CuentaAhorroPruebas.html": {
+    "href": "docs/Bank.Domain.Tests.Features.CuentaAhorroPruebas.html",
+    "title": "Class CuentaAhorroPruebas | Bank App",
+    "summary": "Class CuentaAhorroPruebas Namespace Bank.Domain.Tests.Features Assembly Bank.Domain.Tests.dll [Binding] public sealed class CuentaAhorroPruebas Inheritance object CuentaAhorroPruebas Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Constructors CuentaAhorroPruebas(ScenarioContext) public CuentaAhorroPruebas(ScenarioContext scenarioContext) Parameters scenarioContext ScenarioContext Methods CuandoCanceloLaCuenta() [When(\"cancelo la cuenta\")] public void CuandoCanceloLaCuenta() CuandoYoDeposito(decimal) [Given(\"con saldo (.*)\")] [When(\"deposito (.*)\")] public void CuandoYoDeposito(decimal monto) Parameters monto decimal CuandoYoRetiro(decimal) [When(\"retiro (.*)\")] public void CuandoYoRetiro(decimal monto) Parameters monto decimal DadoUnaNuevaCuenta(string) [Given(\"la nueva cuenta numero (.*)\")] public void DadoUnaNuevaCuenta(string numeroCuenta) Parameters numeroCuenta string EntoncesDeberiaMostrarseError() [Then(\"deberia ser error\")] public void EntoncesDeberiaMostrarseError() EntoncesDeberiaMostrarseError(string) [Then(\"deberia mostrarse el error: (.*)\")] public void EntoncesDeberiaMostrarseError(string error) Parameters error string EntoncesElResultadoDeberiaSer(decimal) [Then(\"el saldo nuevo deberia ser (.*)\")] public void EntoncesElResultadoDeberiaSer(decimal resultado) Parameters resultado decimal EntoncesLaCuentaDeberiaEstarCancelada() [Then(\"la cuenta deberia estar cancelada\")] public void EntoncesLaCuentaDeberiaEstarCancelada()"
+  },
+  "docs/Bank.Domain.Tests.Features.html": {
+    "href": "docs/Bank.Domain.Tests.Features.html",
+    "title": "Namespace Bank.Domain.Tests.Features | Bank App",
+    "summary": "Namespace Bank.Domain.Tests.Features Classes CuentaAhorroPruebas"
+  },
+  "docs/Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature.html": {
+    "href": "docs/Bank.Domain.Tests.Steps.ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature.html",
+    "title": "Class ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature | Bank App",
+    "summary": "Class ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature Namespace Bank.Domain.Tests.Steps Assembly Bank.Domain.Tests.dll [TestFixture] [Description(\"Como cliente quiero realizar depositos y retiros para modificar mi saldo de cuenta\")] public class ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature Inheritance object ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods ClienteCancelaSuCuentaConSaldoCeroYEsCorrecto() [Test] [Description(\"Cliente cancela su cuenta con saldo cero y es correcto\")] public void ClienteCancelaSuCuentaConSaldoCeroYEsCorrecto() ClienteCancelaSuCuentaConSaldoYEsIncorrecto() [Test] [Description(\"Cliente cancela su cuenta con saldo y es incorrecto\")] public void ClienteCancelaSuCuentaConSaldoYEsIncorrecto() ClienteDepositaEnSuCuentaUnMontoYEsCorrecto() [Test] [Description(\"Cliente deposita en su cuenta un monto y es correcto\")] public void ClienteDepositaEnSuCuentaUnMontoYEsCorrecto() ClienteRetiraEnSuCuentaUnMontoNegativoYEsIncorrecto() [Test] [Description(\"Cliente retira en su cuenta un monto negativo y es incorrecto\")] public void ClienteRetiraEnSuCuentaUnMontoNegativoYEsIncorrecto() ClienteRetiraEnSuCuentaUnMontoYEsCorrecto() [Test] [Description(\"Cliente retira en su cuenta un monto y es correcto\")] public void ClienteRetiraEnSuCuentaUnMontoYEsCorrecto() FeatureSetup() [OneTimeSetUp] public virtual void FeatureSetup() FeatureTearDown() [OneTimeTearDown] public virtual void FeatureTearDown() ScenarioCleanup() public void ScenarioCleanup() ScenarioInitialize(ScenarioInfo) public void ScenarioInitialize(ScenarioInfo scenarioInfo) Parameters scenarioInfo ScenarioInfo ScenarioStart() public void ScenarioStart() TestInitialize() [SetUp] public void TestInitialize() TestTearDown() [TearDown] public void TestTearDown()"
+  },
+  "docs/Bank.Domain.Tests.Steps.html": {
+    "href": "docs/Bank.Domain.Tests.Steps.html",
+    "title": "Namespace Bank.Domain.Tests.Steps | Bank App",
+    "summary": "Namespace Bank.Domain.Tests.Steps Classes ComoClienteQuieroRealizarDepositosYRetirosParaModificarMiSaldoDeCuentaFeature"
+  },
+  "docs/Bank.Domain.html": {
+    "href": "docs/Bank.Domain.html",
+    "title": "Namespace Bank.Domain | Bank App",
+    "summary": "Namespace Bank.Domain Classes Cliente Representa un cliente del banco. CuentaAhorro Representa una cuenta de ahorro bancaria con operaciones básicas."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | Bank App",
+    "summary": "This is the HOMEPAGE. Pruebas HTML Diagrama de Clases Pruebas Markdown"
+  }
+}
