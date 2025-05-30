@@ -69,7 +69,6 @@ jobs:
                 ],
                 "exclude": [
                   "_site/**",
-                  "Cobertura/index.html",
                   "ReporteBDD/index.html"
                 ]
               }
@@ -117,6 +116,8 @@ jobs:
         ## [Diagrama de Clases](clases.md)
 
         ## [Pruebas Markdown](Cobertura/SummaryGithub.md)
+
+        ## [Documentacion Clases, atributos y métodos](docs/Bank.Domain.html)
 
         ## [Reporte BDD](ReporteBDD/index.html)
         EOF

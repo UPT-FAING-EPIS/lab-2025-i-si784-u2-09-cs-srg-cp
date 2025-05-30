@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Bank.Domain.Lab09UII</PackageId>
   </PropertyGroup>
 
 </Project>
